@@ -62,7 +62,7 @@ Server listens on `http://0.0.0.0:1001`
 ## Example: Sending an SMS
 
 ```bash
-curl -X POST http://localhost:1001/sms \
+curl -X POST http://localhost:8081/sms \
   -H "Content-Type: application/json" \
   -d '{"sender": "+123456789", "message": "Hello from the phone!"}'
 ```
