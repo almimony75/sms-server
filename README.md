@@ -1,6 +1,7 @@
 # sms-sse-server
 
 📡 **Offline C++ HTTP Server for Receiving SMS via REST and Broadcasting in Real-Time via Server-Sent Events (SSE)**
+Because why just get SMS when you can stream them like a pro? 😎
 
 ---
 
@@ -12,6 +13,7 @@ This project lets you run a lightweight HTTP server on your PC that:
 - Stores SMS in memory and a log file (`sms_log.jsonl`)
 - Broadcasts incoming SMS to any connected clients in real-time using **Server-Sent Events (SSE)** at `/events`
 - Provides REST endpoints to fetch the latest SMS or all stored SMS
+- **Important**: You need to install a phone app that forwards your SMS messages by sending them as JSON via REST API to this server. This project does not handle receiving SMS directly from your phone — it only receives forwarded messages from any app.
 
 ---
 
@@ -85,14 +87,3 @@ Every time your phone sends an SMS, you’ll see it instantly printed!
 - Press `Ctrl+C` to gracefully stop the server.
 - Logs are saved to `sms_log.jsonl` in the project folder.
 - SSE clients auto-reconnect is your responsibility (or build a fancy front-end).
-
----
-
-## License
-
-MIT License — feel free to fork and customize for your SMS-driven adventures!
-
----
-
-Made with 💡 and ☕ by **mitler**  
-Because why just get SMS when you can stream them like a pro? 😎
