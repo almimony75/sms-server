@@ -1,0 +1,6 @@
+build/
+*.jsonl
+*.log
+*.out
+*.o
+*.obj
